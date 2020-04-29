@@ -1,0 +1,131 @@
+
+#container{
+    background-color: rgb(38, 166, 240);
+    /* min-width: 300px;
+    max-width: 30vw;
+    min-height: 450px;
+    max-height: 450px; */
+    width: 300px;
+    height: 450px;
+    margin: auto;
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas:
+    "logo logo logo logo"
+    "display display display display"
+    "clear clear delete divide"
+    "seven eight nine times"
+    "four five six minus"
+    "one two three plus"
+    "sign zero dot equals";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:0.7fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 30px 15px 15px 15px;
+    grid-gap: 5px;
+}
+
+#container .button{
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    user-select: none;
+}
+
+#container .operator{
+    background-color: rgb(223, 223, 223);
+}
+
+#display{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    font-size: 1.75em;
+    background-color: white;
+}
+
+#container .button:hover{
+    background-color: rgb(184, 184, 184);
+}
+
+#display{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-area: display;
+    height: 50px;
+}
+
+#logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 5px;
+}
+#pad-1{
+    grid-area: one;
+}
+#pad-2{
+    grid-area: two;
+}
+#pad-3{
+    grid-area: three;
+}
+#pad-4{
+    grid-area: four;
+}
+#pad-5{
+    grid-area: five;
+}
+#pad-6{
+    grid-area: six;
+}
+#pad-7{
+    grid-area: seven;
+}
+#pad-8{
+    grid-area: eight;
+}
+#pad-9{
+    grid-area: nine;
+}
+#pad-0{
+    grid-area: zero;
+}
+#pad-equals{
+    grid-area: equals;
+}
+#pad-plus{
+    grid-area: plus;
+}
+#pad-minus{
+    grid-area: minus;
+}
+#pad-times{
+    grid-area: times;
+}
+#pad-divide{
+    grid-area: divide;
+}
+#pad-clear{
+    grid-area: clear;
+}
+#pad-sign{
+    grid-area: sign;
+}
+#pad-dot{
+    grid-area: dot;
+}
+#pad-delete{
+    grid-area: delete;
+}
